@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pulse Rate</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <img src="./img/moon.png" id="icon">
+    <svg id="logo" width="671" height="375" viewBox="0 0 671 375" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0 197.106H202.218L228.5 161L249.5 197.106H308L345 1.5L379.5 374L409.5 197.106H468L487.5 161H517L536.5 127L572.5 197.106H670.5" stroke="#22933A" stroke-width="6"/>
+    </svg>
+
+    <script>
+        var icon = document.getElementById("icon");
+        icon.onclick = function(){
+            document.body.classList.toggle("dark-theme");
+            if(document.body.classList.contains("dark-theme")){
+                icon.src = "./img/sun.png";
+            }else{
+                icon.src = "./img/moon.png";
+            }
+        }
+    </script>   
+    
+</body>
+</html>
